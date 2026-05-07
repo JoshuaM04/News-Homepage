@@ -44,9 +44,6 @@ header {
         min-height: 100dvh;
         border: 0;
         margin: 0 0 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 5rem;
 
         button {
             width: fit-content;
@@ -59,5 +56,11 @@ header {
             gap: 1rem;
             font-size: clamp(1rem, 5vw, 2rem);
         }
+    }
+
+    dialog:modal {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
     }
 }
