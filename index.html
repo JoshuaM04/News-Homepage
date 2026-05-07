@@ -9,26 +9,33 @@
   <title>Frontend Mentor | News homepage</title>
 
   <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <div>
+    <div class="heading-section-one">
       <img src="./assets/images/logo.svg" alt="" />
-      <img src="./assets/images/icon-menu.svg" />
+      <button aria-label="Open menu" command="show-modal" commandfor="navigation"><img src="./assets/images/icon-menu.svg" /></button>
     </div>
+
     <div class="img-container">
       <img src="./assets/images/image-web-3-mobile.jpg" />
     </div>
-  </header>
 
-  <nav>
-    Home
-    New
-    Popular
-    Trending
-    Categories
-  </nav>
+    <dialog id="navigation">
+      <button aria-label="Close menu" command="close" commandfor="navigation"><img src="./assets/images/icon-menu-close.svg" alt="" /></button>
+      <nav>
+        <p>Home</p>
+        <p>New</p>
+        <p>Popular</p>
+        <p>Trending</p>
+        <p>Categories</p>
+      </nav>
+    </dialog>
+  </header>
 
   <main>
     <h1>The Bright Future of Web 3.0?</h1>
