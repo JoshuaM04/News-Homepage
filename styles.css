@@ -238,24 +238,27 @@ footer {
         }
     }
 
-    .desktop-box-one {
-        display: flex;
-        gap: 2rem;
+    main {
+        .desktop-box-one {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
 
-        .img-container {
-            width: 100%;
+            .img-container {
+                width: 100%;
 
-            .mobile-heading-image {
-                display: none;
+                .mobile-heading-image {
+                    display: none;
+                }
+
+                .desktop-heading-image {
+                    display: block;
+                }
             }
 
-            .desktop-heading-image {
-                display: block;
+            .section-one {
+                height: fit-content;
             }
-        }
-
-        .section-one {
-            height: fit-content;
         }
     }
 
